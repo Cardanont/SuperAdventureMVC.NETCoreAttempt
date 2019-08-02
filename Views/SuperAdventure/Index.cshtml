@@ -1,0 +1,32 @@
+﻿@model Engine.Player
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Game On!</h1>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(p => p.CurrentHitPoints)
+        @Model.CurrentHitPoints
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(p => p.MaximumHitPoints)
+        @Model.MaximumHitPoints
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(p => p.Gold)
+        @Model.Gold
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(p => p.ExperiencePoints)
+        @Model.ExperiencePoints
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(p => p.Level)
+        @Model.Level
+    </div>
+}
+

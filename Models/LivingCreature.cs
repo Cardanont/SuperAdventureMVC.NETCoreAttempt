@@ -8,6 +8,13 @@ namespace SuperAdventure.Models
 {
     public class LivingCreature
     {
+
+        public LivingCreature(int currentHitPoints, int maximumHitPoints)
+        {
+            CurrentHitPoints = currentHitPoints;
+            MaximumHitPoints = maximumHitPoints;
+        }
+
         [Display(Name = "Maximum Hit points")]
         public int MaximumHitPoints { get; set; }
 

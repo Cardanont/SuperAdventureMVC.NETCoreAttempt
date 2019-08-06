@@ -16,13 +16,11 @@ namespace SuperAdventure.Controllers
 
         public IActionResult Index()
         {
-            Player player = new Player();
+            // Player initial data
+            Player player = new Player(20, 0, 1, 10, 10);
 
-            player.CurrentHitPoints = 10;
-            player.MaximumHitPoints = 10;
-            player.Gold = 20;
-            player.ExperiencePoints = 0;
-            player.Level = 1;
+            // Player Initial location
+            Location location = new Location(1, "Home", "This is your house");
 
             return View(player);
         }

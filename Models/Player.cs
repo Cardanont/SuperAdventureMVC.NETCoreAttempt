@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace SuperAdventure.Models
 {
-    public class Player
+    public class Player : LivingCreature
     {
-        [Display(Name = "Current Hit Points")]
-        public int CurrentHitPoints { get; set; }
-        [Display(Name = "Maximum Hit points")]
-        public int MaximumHitPoints { get; set; }
         [Display(Name = "Gold")]
         public int Gold { get; set; }
         [Display(Name = "Experience Points")]

@@ -9,13 +9,12 @@ namespace SuperAdventure.Models
     public class Player : LivingCreature
     {
 
-        public Player(int gold, int experiencePoints, int level, int currentHitPoints, int maximumHitPoints) : base(currentHitPoints, maximumHitPoints)
+        public Player(int gold, int experiencePoints, int level, int currentHitPoints, int maximumHitPoints) 
+            : base(currentHitPoints, maximumHitPoints)
         {
             Gold = gold;
             ExperiencePoints = experiencePoints;
             Level = level;
-            CurrentHitPoints = currentHitPoints;
-            MaximumHitPoints = maximumHitPoints;
         }
 
         [Display(Name = "Gold")]

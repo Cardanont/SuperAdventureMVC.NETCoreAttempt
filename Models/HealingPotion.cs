@@ -7,6 +7,11 @@ namespace SuperAdventure.Models
 {
     public class HealingPotion : Item
     {
+
+        public HealingPotion(int id, string name, string namePlural, int amountHeal):base(id, name, namePlural)
+        {
+            AmountToHeal = amountHeal;
+        }
         public int  AmountToHeal { get; set; }
     }
 }

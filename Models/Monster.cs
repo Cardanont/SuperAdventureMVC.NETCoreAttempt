@@ -7,15 +7,13 @@ namespace SuperAdventure.Models
 {
     public class Monster : LivingCreature
     {
-        public Monster(int id, string name, int maxDamage, int rewardExp, int rewardGold, int currentHitP, int maxHitP) : base(currentHitP, maxHitP)
+        public Monster(int id, string name, int maxDamage, int rewardExp, int rewardGold, int currentHitPoints, int maximumHitPoints) : base(currentHitPoints, maximumHitPoints)
         {
             ID = id;
             Name = name;
             MaximumDamage = maxDamage;
             RewardExperiencePoints = rewardExp;
             RewardGold = rewardGold;
-            CurrentHitPoints = currentHitP;
-            MaximumHitPoints = maxHitP;
         }
         public int ID { get; set; }
         public string Name { get; set; }

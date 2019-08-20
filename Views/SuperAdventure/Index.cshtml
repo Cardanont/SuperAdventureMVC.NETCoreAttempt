@@ -1,4 +1,4 @@
-﻿@model SuperAdventure.Models.Player
+﻿@model SuperAdventure.ViewModels.GameFormViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,27 +6,29 @@
 
 <h1>Game On!</h1>
 
+<h3>You are at:  @Model.Location.Name</h3>
+
 @using (Html.BeginForm())
 {
     <div class="form-group">
-        @Html.LabelFor(p => p.CurrentHitPoints)
-        @Model.CurrentHitPoints
+        @Html.LabelFor(p => p.Player.CurrentHitPoints)
+        @Model.Player.CurrentHitPoints
     </div>
     <div class="form-group">
-        @Html.LabelFor(p => p.MaximumHitPoints)
-        @Model.MaximumHitPoints
+        @Html.LabelFor(p => p.Player.MaximumHitPoints)
+        @Model.Player.MaximumHitPoints
     </div>
     <div class="form-group">
-        @Html.LabelFor(p => p.Gold)
-        @Model.Gold
+        @Html.LabelFor(p => p.Player.Gold)
+        @Model.Player.Gold
     </div>
     <div class="form-group">
-        @Html.LabelFor(p => p.ExperiencePoints)
-        @Model.ExperiencePoints
+        @Html.LabelFor(p => p.Player.ExperiencePoints)
+        @Model.Player.ExperiencePoints
     </div>
     <div class="form-group">
-        @Html.LabelFor(p => p.Level)
-        @Model.Level
+        @Html.LabelFor(p => p.Player.Level)
+        @Model.Player.Level
     </div>
 }
 

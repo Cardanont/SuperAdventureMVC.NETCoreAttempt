@@ -14,7 +14,7 @@ namespace SuperAdventure.Models
             ID = id;
             Name = name;
             Description = description;
-            ItemRequieredToEnter = itemRequieredToEnter;
+            ItemRequiredToEnter = itemRequieredToEnter;
             QuestAvailableHere = questAvailableHere;
             MonsterLivingHere = monsterLivingHere;
         }

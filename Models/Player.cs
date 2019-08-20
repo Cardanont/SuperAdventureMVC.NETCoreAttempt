@@ -15,6 +15,8 @@ namespace SuperAdventure.Models
             Gold = gold;
             ExperiencePoints = experiencePoints;
             Level = level;
+            Inventory = new List<InventoryItem>();
+            Quest = new List<PlayerQuest>();
         }
 
         [Display(Name = "Gold")]
@@ -23,5 +25,9 @@ namespace SuperAdventure.Models
         public int ExperiencePoints { get; set; }
         [Display(Name = "Level")]
         public int Level { get; set; }
+
+        public List<InventoryItem> Inventory { get; set; }
+
+        public List<PlayerQuest> Quest { get; set; }
     }
 }
